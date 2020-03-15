@@ -41,7 +41,7 @@ public class demo {
         if(x==n-2 && y==n-2) {
             min = Math.min(count, min);
         }else {
-            //走过的位置不能重复走，故而走过就设为1（障碍物）
+            
             migong[x][y]=1;
             if(y<n-1 && migong[x][y+1]==0) {
                 recursion(x, y+1, count+1);
